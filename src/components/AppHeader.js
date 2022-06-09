@@ -10,7 +10,7 @@ const AppHeader = () => {
       }
     
       return (
-        <header className="app-header">
+        <div className="app-header nav justify-content-center">
           <NavLink className={getNavClass} to="/" end>Homepage</NavLink>
           <NavLink className={getNavClass} to="store">Store</NavLink>
           <NavLink className={getNavClass} to="mac">Mac</NavLink>
@@ -22,7 +22,7 @@ const AppHeader = () => {
           <NavLink className={getNavClass} to="only_on_apple">Only on Apple</NavLink>
           <NavLink className={getNavClass} to="accessories">Accessories</NavLink>
           <NavLink className={getNavClass} to="support">Support</NavLink>
-        </header>
+        </div>
       );      
 }
 
