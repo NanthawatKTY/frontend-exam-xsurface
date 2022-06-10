@@ -10,7 +10,7 @@ function CarouselImage(props) {
         for (const ImgCarouItem of productImgs) {
             itemPhoto.push(
                 <Carousel.Item >    
-                    <img className="d-block w-100" src={ImgCarouItem} />
+                    <img className="img-fluid rounded mx-auto d-block mt-4" src={ImgCarouItem} />
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
