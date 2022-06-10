@@ -1,0 +1,17 @@
+
+.app-container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+  
+.app-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+  

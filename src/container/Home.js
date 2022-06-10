@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
 import './Home.css'
 import axios from "axios";
+import ProductList from "../components/products/ProductList";
 
 function Home() {
 
     const [products, setProducts] = useState([]);
-    let apiUrl = "https://dummyjson.com/products?skip=5&limit=10"
+    const apiUrl = "https://dummyjson.com/products?skip=5&limit=10"
 
     useEffect(() => {
         axios.get(apiUrl)
@@ -17,33 +18,19 @@ function Home() {
     }, [])
 
     const arrProducts = products.map((product, index) => {
+        // console.log(product);
         return (
-            <tbody>
-                <tr>
-                    <td>{product.id}</td>
-                    <td>{product.title}</td>
-                    <td>{product.price}</td>
-                    <td><img src={product.thumbnail}/></td>
-                </tr>
-            </tbody>
+            <ProductList key={index} product={product}/>
         )
     });
 
     return(
-        <div className="d-flex justify-content-center">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th >
-                        <th >Title</th >
-                        <th >Price</th >
-                        <th >Image</th >
-                    </tr>
-
-                </thead>
+        <div className='app-container mt-5'>
+            <div className="app-grid">
                 {arrProducts}
-            </table>
+            </div>
         </div>
+
     )
 }
 
