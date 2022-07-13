@@ -23,7 +23,7 @@
 
 /* Second nav */
 .sec-nav-item{
-  background-color: rgba(180, 179, 179, 0.797);
+  background-color: rgb(180, 179, 179);
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,6 +39,16 @@
   /* background: #1f97c2; */
   border-radius: 20px;
 }
+
+
+/* Sticky nav */
+.navigation {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+/* Searchbar fade */
 
 .fadeInWidth {
   animation: 0.2s linear fadeInWidth;

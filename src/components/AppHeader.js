@@ -17,7 +17,7 @@ const AppHeader = () => {
     
       return (
 
-        <div className="justify-content-center">
+        <div className="justify-content-center navigation">
           <Navbar className="text-center app-header" style={{justifyContent: 'center'}} bg="dark" variant="dark" expand="lg">
             <Container className="justify-content-center">
                 <Navbar.Toggle aria-controls="basic-navbar-nav " />
@@ -35,7 +35,7 @@ const AppHeader = () => {
                     <Nav.Link className={getNavClass} href="accessories">Accessories</Nav.Link>
                     <Nav.Link className={getNavClass} href="support">Support</Nav.Link>
                     <Search />
-                    <Navbar.Brand className="mx-auto" href=""><i class="fa-solid fa-bag-shopping"></i></Navbar.Brand> 
+                    <Navbar.Brand className="mx-auto" href=""><i className="fa-solid fa-bag-shopping"></i></Navbar.Brand> 
                   </Nav>
                 </Navbar.Collapse>
 

@@ -15,7 +15,7 @@ function ProductItem(props) {
             <h1 className="mt-5 mb-5">{productDesc}</h1>
             <p className="mt-4 mb-4">เริ่มต้นที่ ฿<span>{productPrice}</span></p>
             <div className="container-fluid mt-4 mb-5">
-                <button className="btn btn-primary btn-rouned me-2">ซื้อ</button>
+                <button className="btn btn-rouned me-2 btn-buy">ซื้อ</button>
                 <a href="#" className="ms-2 see-more-link">ดูเพิ่มเติม <i class="fa-regular fa-greater-than"></i></a>
             </div>
             <CarouselImage productImgs={productImgs}/>

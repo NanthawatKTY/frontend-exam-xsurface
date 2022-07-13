@@ -10,3 +10,19 @@
 .see-more-link:hover{
     text-decoration: underline;
 }
+
+.btn-buy{
+    background-color: rgb(37, 104, 228);
+    color: white;
+    border-radius: 24px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(37, 104, 228);
+}
